@@ -9,7 +9,8 @@ void WriteUi()
 	cout << "3. Best rating film in genre" << endl;
 	cout << "4. Show all films" << endl;
 	cout << "5. Write films" << endl;
-	cout << "6. Exit" << endl;
+	cout << "6. Program autor" << endl;
+	cout << "7. Exit" << endl;
 	cout << "Enter command(0-6): ";
 }
 
@@ -78,6 +79,9 @@ void Start(string film)
 			}
 			break;
 		case 6:
+			ProgramAutor();
+			break;
+		case 7:
 			break;
 		default:
 			break;

@@ -109,3 +109,7 @@ FilmData EnterFilm()
 	cin >> film.DiskCost;
 	return film;
 }
+void ProgramAutor()
+{
+	cout << "Maskym Yanishevskiy" << endl;
+}
