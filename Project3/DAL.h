@@ -13,6 +13,7 @@ struct FilmData
 	string DiskCost;
 };
 
+//Get films from file
 vector<FilmData> GetFilms(string name)
 {
 	vector<FilmData> films; FilmData film;

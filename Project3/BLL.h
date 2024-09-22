@@ -1,6 +1,7 @@
 #pragma once
 #include"DAL.h"
 
+//find film by name
 FilmData FindName(vector<FilmData> film, string word)
 {
 	FilmData abc;
@@ -14,6 +15,8 @@ FilmData FindName(vector<FilmData> film, string word)
 	cout << "Not found!" << endl;
 	return abc;
 }
+
+//find film by genre
 FilmData FindGenre(vector<FilmData> film, string word)
 {
 	FilmData abc;
@@ -27,6 +30,8 @@ FilmData FindGenre(vector<FilmData> film, string word)
 	cout << "Not found!" << endl;
 	return abc;
 }
+
+//find film by director
 FilmData FindDirector(vector<FilmData> film, string word)
 {
 	FilmData abc;
@@ -40,6 +45,8 @@ FilmData FindDirector(vector<FilmData> film, string word)
 	cout << "Not found!" << endl;
 	return abc;
 }
+
+//find most popular film in genre
 FilmData MostPopular(vector<FilmData> film, string genre)
 {
 	int bestrating = film[0].Rating; int bestnum = 0;
@@ -53,6 +60,8 @@ FilmData MostPopular(vector<FilmData> film, string genre)
 	}
 	return film[bestnum];
 }
+
+//show all films
 void ShowFilms(vector<FilmData> film)
 {
 	cout << "-------------------Films-------------------" << endl;
@@ -68,6 +77,8 @@ void ShowFilms(vector<FilmData> film)
 	}
 	cout << "-------------------------------------------" << endl;
 }
+
+//write films to file
 void WriteFilm(vector<FilmData> film, string filename)
 {
 	ofstream out(filename);
@@ -81,6 +92,8 @@ void WriteFilm(vector<FilmData> film, string filename)
 	}
 	out.close();
 }
+
+//enter film data from keyboard
 FilmData EnterFilm()
 {
 	FilmData film;
